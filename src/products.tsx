@@ -18,7 +18,7 @@ export const productList: Product[] =[
         usage: "",
     },{
         name: "Tampons",
-        description: "An  insertable cotton piece with a string at the end for removability",
+        description: "An  insertable cotton piece with a string at the end for removability. It can come with or without a plastic applicator.",
         avgCost: "$4-$10",
         material: "Cotton",
         image: "https://media.glamour.com/photos/5ef907986322b9d9a0f12e15/1:1/w_3196,h_3196,c_limit/GettyImages-1201811965.jpg",

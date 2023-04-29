@@ -34,22 +34,21 @@ export function Products(): JSX.Element {
             <Heading size="lg" style={{"fontFamily": "'Georgia', sans-serif"}}>
                 <Text size="md">Hygiene Products</Text>
             </Heading>
-            <SimpleGrid w="200vh" h="70vh" p="4vh"  spacing = {2} templateColumns={{base: "repeat(3, 1fr)"}}>
+            <SimpleGrid w="200vh" h="80vh" p="4vh"  spacing = {2} templateColumns={{base: "repeat(3, 1fr)"}}>
                 {productList.map((product)=>(
-                    <Card maxW="md" direction={{base: "row", sm:"column"}} style={{"fontFamily": "'Georgia', sans-serif"}} overflow="hidden" variant="elevated" key={product.name}>
+                    <Card backgroundColor="red.600" maxW="md" direction={{base: "row", sm:"column"}} style={{"fontFamily": "'Georgia', sans-serif"}} overflow="hidden" variant="elevated" key={product.name}>
                         <CardHeader key={product.name} >
                             <Box>
-                                <Heading size="sm">
+                                <Heading size="sm" style={{"fontFamily": "'Georgia', sans-serif"}}>
                                     {product.name}
                                 </Heading>
                             </Box>
                         </CardHeader>
                         <Box>
-                            <CardBody>
+                            <CardBody h="80vh">
                                 <Flex>
                                     <Image maxW={{base: "100%", sm:"100px"}} src={product.image} alt="poster"></Image>
-                                    <Spacer></Spacer>
-                                    <Text fontSize="xs" key={product.description}>{product.description}</Text>
+                                    <Text noOfLines={4} fontSize="sm"key={product.description}>{product.description}</Text>
                                     <Text fontSize="xs">                                
                                         <span>Cost: {product.avgCost}</span>
                                         <div></div>
