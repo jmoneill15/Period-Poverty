@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/jmoneill15/Period-Poverty/static/css/main.98964fa4.css",
-    "main.js": "/jmoneill15/Period-Poverty/static/js/main.785c62f7.js",
-    "static/js/787.4ef7427d.chunk.js": "/jmoneill15/Period-Poverty/static/js/787.4ef7427d.chunk.js",
-    "index.html": "/jmoneill15/Period-Poverty/index.html",
-    "main.98964fa4.css.map": "/jmoneill15/Period-Poverty/static/css/main.98964fa4.css.map",
-    "main.785c62f7.js.map": "/jmoneill15/Period-Poverty/static/js/main.785c62f7.js.map",
+    "main.css": "/Period-Poverty/static/css/main.98964fa4.css",
+    "main.js": "/Period-Poverty/static/js/main.785c62f7.js",
+    "static/js/787.4ef7427d.chunk.js": "/Period-Poverty/static/js/787.4ef7427d.chunk.js",
+    "index.html": "/Period-Poverty/index.html",
+    "main.98964fa4.css.map": "/Period-Poverty/static/css/main.98964fa4.css.map",
+    "main.785c62f7.js.map": "/Period-Poverty/static/js/main.785c62f7.js.map",
     "787.4ef7427d.chunk.js.map": "/v/static/js/787.4ef7427d.chunk.js.map"
   },
   "entrypoints": [
