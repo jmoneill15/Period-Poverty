@@ -5,6 +5,7 @@ import { Location } from "./Location";
 import { locationList } from "./locationList";
 import { Input, InputGroup,InputLeftAddon } from "@chakra-ui/input";
 import { Stack } from "@chakra-ui/layout";
+import { useState } from "react";
 
 //add imports to add another location
 
@@ -24,6 +25,10 @@ export function locationProperty(props: LocationProps){
 }
 
 export function Locations(): JSX.Element {
+    const [building, setBuilding] = React.useState("");
+
+    //const buildingChange=(event)=> setBuilding(event.target.value);
+
     //embed a map dumbfuck
     return(
         <Box>
@@ -38,9 +43,11 @@ export function Locations(): JSX.Element {
                             </Box>
                         </AccordionButton>
                         <AccordionPanel>
-                            Address: {location.address}
+                            Location: {location.location}
                             <Spacer></Spacer>
                             Operating Hours: {location.hours}
+                            <Spacer></Spacer>
+                            Address: {location.address}
                         </AccordionPanel>
                     </AccordionItem>
                 ))}
@@ -49,15 +56,19 @@ export function Locations(): JSX.Element {
             <Stack spacing={1}>
                 <InputGroup p="7vh">
                     <InputLeftAddon>Building</InputLeftAddon>
-                    <Input variant="filled" placeholder=" "></Input>
+                    <Input variant="filled" placeholder="Insert Building"></Input>
+                </InputGroup>
+                <InputGroup p="7vh">
+                    <InputLeftAddon>Location</InputLeftAddon>
+                    <Input variant="filled" placeholder="Insert Location"></Input>
                 </InputGroup>
                 <InputGroup p="7vh">
                     <InputLeftAddon>Address</InputLeftAddon>
-                    <Input variant="filled" placeholder=" "></Input>
+                    <Input variant="filled" placeholder="Insert Address"></Input>
                 </InputGroup>
                 <InputGroup p="7vh">
                     <InputLeftAddon>Operating Hours</InputLeftAddon>
-                    <Input variant="filled" placeholder=" "></Input>
+                    <Input variant="filled" placeholder="Insert Operating Hours "></Input>
                 </InputGroup>
             </Stack>
         </Box>
